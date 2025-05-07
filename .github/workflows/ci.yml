@@ -34,7 +34,7 @@ jobs:
 
       - name: Commit and Push Changes
         run: |
-          git add bj-unicom-iptv.m3u
+          git add bj-unicom-iptv.m3u bj-unicom-iptv-udpxy.m3u
 
           # 如果有变更则执行提交和推送操作
           git diff --cached --exit-code || git commit -m "Replace M3U URLs" && git push
